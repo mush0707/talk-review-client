@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.92) !important;
+    caret-color: rgba(255, 255, 255, 0.92) !important;
+
+    /* Big inset shadow to override autofill background */
+    -webkit-box-shadow: 0 0 0px 1000px rgba(15, 23, 42, 0.35) inset !important;
+    box-shadow: 0 0 0px 1000px rgba(15, 23, 42, 0.35) inset !important;
+
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+/* Optional: better suggestion dropdown on dark UI (browser dependent) */
+input {
+    color-scheme: dark;
+}
