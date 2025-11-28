@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
-export type RoleKey = "speaker" | "listener" | "admin";
+export type RoleKey = "speaker" | "reviewer" | "admin";
 
 type RoleOption = {
   key: RoleKey;
@@ -96,3 +96,4 @@ function pick(v: RoleKey) {
     </div>
   </div>
 </template>
+

@@ -1,0 +1,166 @@
+{
+  "auth": {
+    "login": {
+      "title": "Welcome back",
+      "subtitle": "Sign in to continue. Token-based auth with Laravel Sanctum.",
+      "cardTitle": "Login",
+      "cardTagline": "Use your email and password.",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "footerHint": "New here?",
+      "footerLink": "Create account",
+      "errorTitle": "Couldn’t sign you in"
+    },
+    "register": {
+      "title": "Create your account",
+      "subtitle": "Register in seconds. Your email may require verification.",
+      "cardTitle": "Register",
+      "cardTagline": "A clean start — and a clean UI.",
+      "name": "Full name",
+      "email": "Email",
+      "password": "Password",
+      "confirm": "Confirm password",
+      "submit": "Create account",
+      "footerHint": "Already have an account?",
+      "footerLink": "Sign in",
+      "roleLabel": "Choose your role",
+      "roles": {
+        "speaker": { "title": "Speaker", "desc": "Submit talk proposals for review." },
+        "reviewer": { "title": "Reviewer", "desc": "Evaluate proposals and provide feedback." },
+        "admin": { "title": "Admin", "desc": "See all proposals and manage statuses." }
+      },
+      "errorTitle": "Couldn’t create account"
+    },
+    "verify": {
+      "title": "Verify your email",
+      "desc": "Your account is created, but verification is required to fully activate it.",
+      "resend": "Resend email",
+      "sent": "Verification email sent. Open MailHog and click the link.",
+      "failed": "Failed to resend verification email."
+    },
+    "verifiedPage": {
+      "okTitle": "Email verified ✅",
+      "okSubtitle": "You can return to the app.",
+      "failTitle": "Verification failed ❌",
+      "failSubtitle": "The link might be expired or invalid.",
+      "successBoxTitle": "Success",
+      "successBoxText": "Your email is confirmed. Refresh your dashboard status.",
+      "failBoxTitle": "Something went wrong",
+      "failBoxText": "Please request a new verification email from inside the app.",
+      "goDashboard": "Go to Dashboard",
+      "goLogin": "Login"
+    }
+  },
+  "dashboard": {
+    "titleFallback": "Dashboard",
+    "sessionTitle": "Session",
+    "sessionText": "Token is stored in localStorage and attached to every request as Bearer.",
+    "stats": {
+      "loggedIn": "Logged in",
+      "verifyRequired": "Email verification required",
+      "verified": "Email verified",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "nextStepsTitle": "What you can do next",
+    "nextSteps": {
+      "a": "Speakers: submit a new talk proposal.",
+      "b": "Reviewers: open your review queue and evaluate proposals.",
+      "c": "Admins: view all proposals and change statuses."
+    },
+    "speakerCta": {
+      "title": "Ready to pitch a talk?",
+      "desc": "Submit a proposal and track its review status.",
+      "button": "Create proposal"
+    }
+  },
+  "common": {
+    "loading": "Loading…",
+    "refresh": "Refresh",
+    "error": "Something went wrong",
+    "back": "Back",
+    "save": "Save",
+    "submit": "Submit",
+    "logout": "Logout",
+    "cancel": "Cancel",
+    "search": "Search",
+    "prev": "Prev",
+    "next": "Next",
+    "optional": "Optional"
+  },
+  "roles": {
+    "speaker": "Speaker",
+    "reviewer": "Reviewer",
+    "admin": "Administrator"
+  },
+  "status": {
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected"
+  },
+  "tags": {
+    "label": "Tags",
+    "placeholder": "Type to search tags…",
+    "create": "Create tag",
+    "empty": "No tags found"
+  },
+  "proposals": {
+    "title": "Talk Proposals",
+    "subtitle": "Search and filter proposals",
+    "create": "Create proposal",
+    "filters": "Filters",
+    "searchLabel": "Search by title",
+    "searchPlaceholder": "e.g. “Laravel at Scale”",
+    "statusLabel": "Status",
+    "updateStatusLabel": "Update Status",
+    "statusAll": "All statuses",
+    "listEmpty": "No proposals found with these filters.",
+    "total": "{n} proposals",
+    "newTitle": "Submit a proposal",
+    "newSubtitle": "Title & description are required. Tags and PDF are optional.",
+    "fields": {
+      "title": "Title",
+      "titlePh": "Talk title",
+      "description": "Description",
+      "descriptionPh": "What is your talk about?",
+      "file": "Attachment (PDF)",
+      "fileHint": "PDF only • max 4MB"
+    },
+    "detailTitle": "Proposal",
+    "openPdf": "Open PDF",
+    "adminStatusTitle": "Admin — Change status",
+    "statusSaved": "Status updated"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "yourReview": "Your review",
+    "onlyReviewers": "Reviewers only",
+    "rating": "Rating",
+    "comment": "Comment",
+    "commentPh": "Optional: add feedback…",
+    "saved": "Review saved",
+    "searchLabel": "Search in comments",
+    "searchPlaceholder": "type keywords…",
+    "ratingMin": "Min rating",
+    "ratingMax": "Max rating",
+    "noComment": "No comment",
+    "count": "{n} reviews",
+    "empty": "Review list are empty",
+    "selectRating": "Please select a rating."
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "No notifications yet",
+    "unread": "Unread",
+    "unreadCount": "Unread: {count}",
+    "markAllRead": "Mark all as read",
+    "types": {
+      "proposal_submitted": "New proposal submitted",
+      "proposal_reviewed": "Your proposal was reviewed",
+      "proposal_status_changed": "Proposal status changed",
+      "unknown": "Notification"
+    },
+    "search": "Pick to search"
+  }
+}

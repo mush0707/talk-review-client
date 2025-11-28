@@ -13,11 +13,6 @@ const headline = computed(() => (auth.user ? `Hi, ${auth.user.name}` : t("dashbo
 const subtitle = computed(() => (auth.user ? `${auth.user.email} • role: ${auth.user.role}` : ""));
 
 const isSpeaker = computed(() => auth.user?.role === "speaker"); // must match backend role slug
-async function onLogout() {
-  auth.logout().then(() => {
-    router.replace("/login");
-  });
-}
 </script>
 
 <template>
@@ -29,12 +24,6 @@ async function onLogout() {
                 @click="router.push('/proposals/new')"
         >
           {{ t("dashboard.speakerCta.button") }}
-        </button>
-        <button
-            class="rounded-2xl border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/15"
-            @click="onLogout()"
-        >
-          {{ t("common.logout") }}
         </button>
       </div>
     </template>
