@@ -22,7 +22,6 @@ export const useNotificationsStore = defineStore("notifications", {
     }),
 
     actions: {
-        // ✅ NEW: refresh only unread count
         async refreshUnread() {
             try {
                 const res = await notificationsApi.unreadCount();
@@ -81,7 +80,6 @@ export const useNotificationsStore = defineStore("notifications", {
 
             EchoAny.private(channel).notification((payload: any) => {
                 const id = payload?.id ?? (crypto?.randomUUID ? crypto.randomUUID() : String(Date.now()));
-                console.log(payload);
 
                 this.pushIncoming({
                     id: String(id),

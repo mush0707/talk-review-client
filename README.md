@@ -3,7 +3,7 @@
 Vue 3 + Vite + TypeScript + Pinia + vue-i18n + Laravel Echo (Pusher protocol) for Reverb realtime notifications.
 
 ## Requirements
-- Node.js 18+ (recommended)
+- Node.js 20+ (recommended)
 - npm / pnpm / yarn (pick one)
 
 ## Setup

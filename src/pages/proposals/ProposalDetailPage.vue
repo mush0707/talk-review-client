@@ -168,6 +168,7 @@ async function saveMyReview() {
     rating.value = null;
     hoverRating.value = null;
     comment.value = "";
+    await new Promise((r) => setTimeout(r, 500));
 
     await loadReviews();
   } catch (e: any) {
